@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="i95dev" translate="label" sortOrder="10">
+            <label>I95Dev</label>
+        </tab>
+        <section id="disablepaymentmethods" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Disable Payment Methods</label>
+            <tab>i95dev</tab>
+            <resource>I95Dev_DisablePaymentMethods::i95dev_disablepaymentmethods_config</resource>
+            <group id="general" translate="label" type="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Disable Payment Methods</label>
+                <field id="hide_payment_methods_id" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enter Payment Methods to Disable</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
